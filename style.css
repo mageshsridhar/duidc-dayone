@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Helvetica,sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F3F3FB;
+}
+.contentBox{
+    background: white;
+    width: 55%;
+    height: 50%;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 20px rgba(102,16,242,0.2);
+}
+h2{
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.subhead
+{
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 62%;
+}
+.inputAndButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.field{
+    outline: none;
+    padding: 15px 10px;
+    width: 45%;
+    margin-right: 15px;
+    border: 1.5px solid rgba(180,180,186,0.5);
+    border-radius: 3px;
+}
+.field:focus{
+    border: 1.5px solid #6610f2;
+    border-radius: 3px;
+    height: auto;
+}
+button{
+    width: 22%;
+    background: #6610f2;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 10px 15px rgba(102,16,242,0.3);
+    outline: none;
+    cursor: pointer;
+}
+.checkBoxandAgreement{
+    width: 69%;
+    display: flex;
+    justify-content: flex-start;
+}
+.checkbox{
+    border: 1px solid rgba(180,180,186,0.5);
+    margin-top: 3px;
+}
+p{
+    font-size: 13px;
+    margin-left: 10px;
+    line-height: 1.6;
+}
+i{
+    margin-left: 10px;
+}
+@media (max-width: 500px){
+    .subhead{
+        width: 90%;
+    }
+    .contentBox
+    {
+        width: 75%;
+        height: 70%;
+    }
+    .inputAndButton
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+        height: 25%;
+        margin: 0;
+    }
+    .field{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+    button{
+        width: 100%;
+        height: 100%;
+    }
+    .checkBoxandAgreement{
+        margin-top: 20px;
+        width: 85%;
+    }
+}
